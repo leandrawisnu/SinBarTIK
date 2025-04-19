@@ -13,6 +13,14 @@
 
 <body>
     <?php include './components/navbar.php' ?>
+
+    <div class="hero">
+        <div class="hero-texts">
+            <p class="heaeding headline color-sinbarBlue">Selamat Datang di Website SinBarTIK</p>
+            <p class="subheading regular-text color-sinbarBlack background-color-sinbarLightBlue">Website untuk Mempelajari Informatika</p>
+        </div>
+        <img class="hero-image-home" src="./assets/content/hero-home.png">
+    </div>
 </body>
 
 </html>

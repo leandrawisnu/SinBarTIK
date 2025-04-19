@@ -1,4 +1,12 @@
+* {
+    margin: 0;
+}
+
 body {
+    display: flex;
+    justify-content: start;
+    gap: 100px;
+    flex-direction: column;
     font-family: 'Nunito', sans-serif;
     margin: 0;
     color: #000800;
@@ -20,6 +28,12 @@ p {
     padding: 0;
 }
 
+a {
+    margin: 0;
+    padding: 0;
+}
+
+
 .center {
     display: flex;
     justify-content: center;
@@ -40,6 +54,10 @@ p {
 
 .color-sinbarBlue {
     color: #1F75F9;
+}
+
+.color-sinbarLightBlue {
+    color: #C9DAF4;
 }
 
 .color-sinbarGrey {
@@ -76,6 +94,10 @@ p {
 
 .background-color-sinbarBlue {
     background-color: #1F75F9;
+}
+
+.background-color-sinbarLightBlue {
+    background-color: #C9DAF4;
 }
 
 .background-color-sinbarGrey {
@@ -127,6 +149,8 @@ p {
 
 }
 
+/* CSS untuk Component Navbar */
+
 .header-strip {
     margin: 0;
     height: 30px;
@@ -134,16 +158,17 @@ p {
 }
 
 .navbar {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     width: 90%;
     height: 70px;
     align-items: center;
-    justify-self: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .container-navbar-logo {
-    width: 300px;
+    width: 15%;
     display: flex;
     justify-content: start
 }
@@ -155,6 +180,12 @@ p {
     justify-content: center;
     align-items: center;
 }
+.navbar-logo img {
+    height: 40px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
 
 .navbar-menus {
     display: flex;
@@ -169,18 +200,20 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 150px;
+    padding: 7px;
+    min-width: 100px;
     border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar-menus-menu:hover {
     background-color: #D9D9D9;
+    border: 2px solid #F1F2F3;
 }
 
 .container-navbar-account {
-
-    width: 300px;
+    width: 15%;
     display: flex;
     justify-content: end
 }
@@ -198,14 +231,57 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 150px;
+    padding: 7px;
+    min-width: 100px;
     border-radius: 10px;
-    border: 2px solid #F1F2F3;
+    border: 2px solid #1F75F9;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar-account-logged-menu:hover {
-    transition: 0.5s;
+    color: #1F75F9;
+    background-color: #F1F2F3;
+    border: 2px solid #1F75F9;
+}
+
+.navbar-account {
+    display: flex;
+    gap: 10px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.navbar-account-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    min-width: 100px;
+    border-radius: 10px;
+    border: 2px solid #1F75F9;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-account-register:hover {
+    color: #F1F2F3;
+    background-color: #1F75F9;
+    border: 2px solid #1F75F9;
+}
+
+.navbar-account-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    min-width: 100px;
+    border-radius: 10px;
+    border: 2px solid #1F75F9;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-account-login:hover {
     color: #1F75F9;
     background-color: #F1F2F3;
     border: 2px solid #1F75F9;
@@ -218,10 +294,10 @@ p {
     padding: 10px;
     border-radius: 10px;
     border: 2px solid #FF0000;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar-account-logged-logout:hover {
-    transition: 0.5s;
     color: #1F75F9;
     background-color: #FF0000;
     border: 2px solid #FF0000;
@@ -230,9 +306,46 @@ p {
 
 .navbar-account-logged-logout svg path {
     fill: #FF0000;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar-account-logged-logout:hover svg path {
-    transition: 0.5s;
     fill: #F1F2F3;
 }
+
+/* CSS untuk Component Navbar */
+
+/* CSS untuk Page Home */
+
+.hero {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-texts {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 20px;
+}
+
+.subheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    width: max-content;
+    border-radius: 10px;
+    border: 2px solid #C9DAF4;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-image-home {
+    width: max-content;
+}
+
+/* CSS untuk Page Home */
