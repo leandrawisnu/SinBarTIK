@@ -1,0 +1,238 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    color: #000800;
+    background-color: #F1F2F3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-sinbarWhite {
+    color: #F1F2F3;
+}
+
+.color-sinbarBlack {
+    color: #000800;
+}
+
+.color-sinbarRed {
+    color: #FF0000;
+}
+
+.color-sinbarBlue {
+    color: #1F75F9;
+}
+
+.color-sinbarGrey {
+    color: #D9D9D9;
+}
+
+.color-sinbarBronze {
+    color: #AD8A56;
+}
+
+.color-sinbarSilver {
+    color: #B4B4B4;
+}
+
+.color-sinbarGold {
+    color: #C9B037;
+}
+
+.color-sinbarDarkGrey {
+    color: #898989;
+}
+
+.background-color-sinbarWhite {
+    background-color: #F1F2F3;
+}
+
+.background-color-sinbarBlack {
+    background-color: #000800;
+}
+
+.background-color-sinbarRed {
+    background-color: #FF0000;
+}
+
+.background-color-sinbarBlue {
+    background-color: #1F75F9;
+}
+
+.background-color-sinbarGrey {
+    background-color: #D9D9D9;
+}
+
+.background-color-sinbarBronze {
+    background-color: #AD8A56;
+}
+
+.background-color-sinbarSilver {
+    background-color: #B4B4B4;
+}
+
+.background-color-sinbarGold {
+    background-color: #C9B037;
+}
+
+.background-color-sinbarDarkGrey {
+    background-color: #898989;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 800;
+
+}
+
+.regular-text {
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.small-text {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.headline {
+    font-size: 48px;
+    font-weight: 800;
+
+}
+
+.large-text {
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.header-strip {
+    margin: 0;
+    height: 30px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    width: 90%;
+    height: 70px;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+.container-navbar-logo {
+    width: 300px;
+    display: flex;
+    justify-content: start
+}
+
+.navbar-logo {
+    display: flex;
+    gap: 12px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menus {
+    display: flex;
+    gap: 20px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.navbar-menus-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.navbar-menus-menu:hover {
+    background-color: #D9D9D9;
+}
+
+.container-navbar-account {
+
+    width: 300px;
+    display: flex;
+    justify-content: end
+}
+
+.navbar-account-logged {
+    display: flex;
+    gap: 10px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.navbar-account-logged-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid #F1F2F3;
+}
+
+.navbar-account-logged-menu:hover {
+    transition: 0.5s;
+    color: #1F75F9;
+    background-color: #F1F2F3;
+    border: 2px solid #1F75F9;
+}
+
+.navbar-account-logged-logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FF0000;
+}
+
+.navbar-account-logged-logout:hover {
+    transition: 0.5s;
+    color: #1F75F9;
+    background-color: #FF0000;
+    border: 2px solid #FF0000;
+
+}
+
+.navbar-account-logged-logout svg path {
+    fill: #FF0000;
+}
+
+.navbar-account-logged-logout:hover svg path {
+    transition: 0.5s;
+    fill: #F1F2F3;
+}
