@@ -15,7 +15,7 @@
         <div class="header-strip small-text background-color-sinbarBlue color-sinbarWhite center">
             <p>X RPL B - SMK NEGERI 4 MALANG</p>
         </div>
-        <div class="navbar background-color-sinbarWhite">
+        <div class="navbar">
             <div class="container-navbar-logo">
                 <div class="navbar-logo color-sinbarBlue">
                     <img src="./assets/icons/logo.svg">

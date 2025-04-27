@@ -317,16 +317,20 @@ a {
 
 /* CSS untuk Page Home */
 
-.hero {
-    display: flex;
-    width: 50%;
+.home-hero {
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
-    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
     align-items: center;
 }
 
-.hero-texts {
+.home-hero-texts {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -338,14 +342,77 @@ a {
     justify-content: center;
     align-items: center;
     padding: 7px;
-    width: max-content;
+    width: 100%;
     border-radius: 10px;
     border: 2px solid #C9DAF4;
     transition: all 0.3s ease-in-out;
 }
 
-.hero-image-home {
-    width: max-content;
+.home-hero-image-home {
+    width: 300px;
 }
 
+.home-peringkat {
+    width: 50%;
+    max-width: 1200px;
+    height: 300px;
+    border: solid;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-peringkat-title {
+    text-align: center;
+}
+
+.home-peringkat-container-top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    height: 70%;
+    align-items: center;
+}
+
+.home-peringkat-top-background {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 25px;
+}
+
+.home-peringkat-top {
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    min-width: 80%;
+    border: solid;
+}
+
+.home-peringkat-top-three {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.home-peringkat-top-three-number {
+    width: 25%;
+    height: 60%;
+    border: solid;
+}
+
+.home-peringkat-top-three-number-1 {
+    width: 25%;
+    height: 100%;
+    border: solid;
+}
 /* CSS untuk Page Home */
