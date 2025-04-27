@@ -7,6 +7,7 @@
     <title>Beranda - SinBarTIK</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="/script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
@@ -41,6 +42,7 @@
             </div>
         </div>
     </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>

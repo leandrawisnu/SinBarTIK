@@ -30,6 +30,9 @@
                     <p class="title">SinBar</p>
                 </div>
             </div>
+            <div id="menu-icon" class="menu-icon">
+                <i class="ph ph-list"></i>
+            </div>
             <div class="navbar-menus">
                 <a class="navbar-menus-menu regular-text color-sinbarBlack">HOME</a>
                 <a class="navbar-menus-menu regular-text color-sinbarBlack">MATERI</a>
@@ -45,17 +48,22 @@
                         </svg>
                     </a>
                 </div> -->
-                <div class="navbar-account">
+                <!-- <div class="navbar-account">
                     <a class="navbar-account-register regular-text background-color-sinbarWhite color-sinbarBlue">GABUNG</a>
                     <a class="navbar-account-login regular-text background-color-sinbarBlue color-sinbarWhite">MASUK</a>
-                </div>
+                </div> -->
             </div>
+<<<<<<< Updated upstream
             <div class="menu-icon">
                 <i class="ph ph-list"></i>
             </div>
+=======
+
+>>>>>>> Stashed changes
         </div>
         <hr class="color-sinbarDarkGrey">
     </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>

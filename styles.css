@@ -417,3 +417,26 @@ a {
 }
 /* CSS untuk Page Home */
 
+<<<<<<< Updated upstream
+=======
+.menu-icon{
+    font-size: 25px;
+    display: none;
+}
+
+@media only screen and (max-width : 768px) {
+    .navbar-menus {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar{
+        flex-wrap: wrap;
+    }
+}
+>>>>>>> Stashed changes
