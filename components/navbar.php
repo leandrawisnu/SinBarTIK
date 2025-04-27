@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 </head>
 
 <body>
@@ -41,6 +49,9 @@
                     <a class="navbar-account-register regular-text background-color-sinbarWhite color-sinbarBlue">GABUNG</a>
                     <a class="navbar-account-login regular-text background-color-sinbarBlue color-sinbarWhite">MASUK</a>
                 </div>
+            </div>
+            <div class="menu-icon">
+                <i class="ph ph-list"></i>
             </div>
         </div>
         <hr class="color-sinbarDarkGrey">
