@@ -85,6 +85,16 @@
             overflow: hidden;
         }
 
+        .peringkat-container2 {
+            background: var(--sinbar-light-blue);
+            border-radius: 20px;
+            padding: 10px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 30px;
+            height: 70px;
+        }
+
         .podium-container {
             display: flex;
             justify-content: center;
@@ -92,6 +102,16 @@
             margin-bottom: 40px;
             height: 250px;
             gap: 10px;
+        }
+
+        .podium-container2 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 40px;
+            height: 15px;
+            gap: 10px;
+            padding-top: 50px;
         }
 
         .podium-step {
@@ -312,207 +332,62 @@
             }
         }
 
-        .dashboard-container {
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 20px;
-        }
-
-        .main-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .dashboard-title {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 40px;
-            letter-spacing: 1px;
-        }
-
-        .subject-card {
-            background: #e9ecef;
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: 2px solid transparent;
-            height: 180px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .subject-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            border-color: #007bff;
-        }
-
-        .subject-icon {
-            font-size: 3rem;
-            color: #007bff;
-            margin-bottom: 15px;
-        }
-
-        .subject-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #007bff;
-            margin-bottom: 10px;
-            line-height: 1.4;
-        }
-
-        .subject-subtitle {
-            color: #6c757d;
-            font-size: 0.9rem;
-            margin-top: auto;
-        }
-
-        .view-all-btn {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 25px;
-            font-weight: 600;
-            margin-top: 30px;
-            transition: all 0.3s ease;
-        }
-
-        .view-all-btn:hover {
-            background: #0056b3;
-            transform: translateY(-2px);
-        }
-
-        .btn-container {
-            text-align: center;
-        }
-
-        /* Custom icons using CSS shapes */
-        .brain-icon::before {
-            content: "🧠";
-            font-size: 3rem;
-        }
-
-        .signal-icon::before {
-            content: "📡";
-            font-size: 3rem;
-        }
-
-        .computer-icon::before {
-            content: "💻";
-            font-size: 3rem;
-        }
-
-        .network-icon::before {
-            content: "🌐";
-            font-size: 3rem;
-        }
-
-        .code-icon::before {
-            content: "💻";
-            font-size: 3rem;
-        }
-
-        .data-icon::before {
-            content: "📊";
-            font-size: 3rem;
-        }
-
-        @media (max-width: 768px) {
-            .dashboard-title {
-                font-size: 1.5rem;
-            }
-
-            .subject-card {
-                height: 160px;
-                padding: 15px;
-            }
-
-            .subject-icon {
-                font-size: 2.5rem;
-            }
-
-            .subject-title {
-                font-size: 1rem;
-            }
-        }
-
-        /* Materi-Materi */
-
-        .brain-icon {
-            width: 40px;
-            height: 40px;
-            background-color: #4a90e2;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1rem;
-        }
-
-        .brain-icon svg {
-            width: 24px;
-            height: 24px;
-            fill: white;
-        }
-
-        .custom-card {
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            height: 100%;
-        }
-
-        .custom-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .custom-btn {
-            background-color: #4a90e2;
-            border: none;
+        .table-container {
+            background-color: #e3f2fd; 
             border-radius: 8px;
-            color: white;
-            padding: 8px 20px;
-            font-size: 14px;
-            font-weight: 500;
-            transition: background-color 0.2s ease;
+            margin: 20px auto;
+            max-width: 1100px;
+            margin-top: -45px;
         }
-
-        .custom-btn:hover {
-            background-color: #357abd;
-            color: white;
-        }
-
-        .card-title {
-            font-size: 1.1rem;
+        
+        .table thead th {
+            background-color: #e3f2fd;
+            color: #333;
             font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 0.75rem;
+            border: none;
+            padding: 15px 12px;
         }
-
-        .card-text {
-            color: #6c757d;
-            font-size: 0.9rem;
-            line-height: 1.5;
+        
+        .table tbody td {
+            background-color: #ffffff;
+            border: none;
+            padding: 15px 12px;
+            vertical-align: middle;
         }
-
-        .container-custom {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-            margin-bottom: 50px;
+        
+        .table tbody tr {
+            border-bottom: none;
         }
-
-        /* banner buku */
+        
+        .table th:first-child,
+        .table td:first-child {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        
+        .table th:last-child,
+        .table td:last-child {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        
+        .table-responsive {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        @media (max-width: 768px) {
+            .table-container {
+                padding: 10px;
+                margin: 10px;
+            }
+            
+            .table thead th,
+            .table tbody td {
+                padding: 8px 6px;
+                font-size: 14px;
+            }
+        }
 
         .banner-container {
             background: linear-gradient(135deg, #4a90e2 0%, #2c5aa0 100%);
@@ -520,6 +395,7 @@
             border-radius: 15px;
             overflow: hidden;
             position: relative;
+            margin-bottom: 50px;
         }
 
         .banner-content {
@@ -804,13 +680,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
-                    <h1 class="hero-title">Materi Materi Teknik Informatika</h1>
-                    <p class="hero-subtitle">Mari Menjadi Anak yang Selalu Berpikir Kritis</p>
+                    <h1 class="hero-title">Peringkat Murid SinBarTIK</h1>
+                    <p class="hero-subtitle">Peringkat SinBar berdasarkan Skor Sinbar</p>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="d-flex justify-content-center">
                         <div style="width: fit-content;">
-                            <img class="home-hero-image-home-center" src="./assets/content/maskot-materi.png">
+                            <img class="home-hero-image-home-center" src="./assets/content/maskot-peringkat.png">
                         </div>
                     </div>
                 </div>
@@ -818,134 +694,120 @@
         </div>
     </div>
 
-    <!-- materi materi -->
-    <div class="container-custom">
-        <div class="row g-4">
-            <!-- Card 1 -->
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card custom-card">
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="brain-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,11.5 18.9,12 18.7,12.4L21.8,15.5C22.3,16 22.3,16.7 21.8,17.2L17.2,21.8C16.7,22.3 16,22.3 15.5,21.8L12.4,18.7C12,18.9 11.5,19 11,19H5A3,3 0 0,1 2,16V8A3,3 0 0,1 5,5H11C11.5,5 12,5.1 12.4,5.3L15.5,2.2C16,1.7 16.7,1.7 17.2,2.2L21.8,6.8C22.3,7.3 22.3,8 21.8,8.5L18.7,11.6C18.9,11 19,10.5 19,11Z" />
-                                </svg>
-                            </div>
-                            <button class="btn btn-primary custom-btn">Selengkapnya</button>
+    <!-- Peringkat Section -->
+    <div class="peringkat-section">
+        <div class="container">
+            <h2 class="peringkat-title">PERINGKAT SINBAR</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="peringkat-container">
+                        <div class="podium-container">
+                            <div class="podium-step second">Muhammad Rafli Al-Farisi</div>
+                            <div class="podium-step first">Izan</div>
+                            <div class="podium-step third">Cipunkkkk Apalah</div>
                         </div>
-                        <h5 class="card-title">Berpikir Komputasi</h5>
-                        <p class="card-text">
-                            Berpikir komputasional adalah sebuah proses pemikiran yang digunakan untuk menyelesaikan masalah, baik dengan atau tanpa menggunakan komputer.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card custom-card">
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="brain-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,11.5 18.9,12 18.7,12.4L21.8,15.5C22.3,16 22.3,16.7 21.8,17.2L17.2,21.8C16.7,22.3 16,22.3 15.5,21.8L12.4,18.7C12,18.9 11.5,19 11,19H5A3,3 0 0,1 2,16V8A3,3 0 0,1 5,5H11C11.5,5 12,5.1 12.4,5.3L15.5,2.2C16,1.7 16.7,1.7 17.2,2.2L21.8,6.8C22.3,7.3 22.3,8 21.8,8.5L18.7,11.6C18.9,11 19,10.5 19,11Z" />
-                                </svg>
-                            </div>
-                            <button class="btn btn-primary custom-btn">Selengkapnya</button>
+                        <div class="peringkat-info">
+                            <p class="peringkat-subtitle">PERINGKAT SINBAR SEMESTER IN BERDASARKAN TOTAL SKOR</p>
                         </div>
-                        <h5 class="card-title">Berpikir Komputasi</h5>
-                        <p class="card-text">
-                            Berpikir komputasional adalah sebuah proses pemikiran yang digunakan untuk menyelesaikan masalah, baik dengan atau tanpa menggunakan komputer.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card custom-card">
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="brain-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,11.5 18.9,12 18.7,12.4L21.8,15.5C22.3,16 22.3,16.7 21.8,17.2L17.2,21.8C16.7,22.3 16,22.3 15.5,21.8L12.4,18.7C12,18.9 11.5,19 11,19H5A3,3 0 0,1 2,16V8A3,3 0 0,1 5,5H11C11.5,5 12,5.1 12.4,5.3L15.5,2.2C16,1.7 16.7,1.7 17.2,2.2L21.8,6.8C22.3,7.3 22.3,8 21.8,8.5L18.7,11.6C18.9,11 19,10.5 19,11Z" />
-                                </svg>
-                            </div>
-                            <button class="btn btn-primary custom-btn">Selengkapnya</button>
-                        </div>
-                        <h5 class="card-title">Berpikir Komputasi</h5>
-                        <p class="card-text">
-                            Berpikir komputasional adalah sebuah proses pemikiran yang digunakan untuk menyelesaikan masalah, baik dengan atau tanpa menggunakan komputer.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card custom-card">
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="brain-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,11.5 18.9,12 18.7,12.4L21.8,15.5C22.3,16 22.3,16.7 21.8,17.2L17.2,21.8C16.7,22.3 16,22.3 15.5,21.8L12.4,18.7C12,18.9 11.5,19 11,19H5A3,3 0 0,1 2,16V8A3,3 0 0,1 5,5H11C11.5,5 12,5.1 12.4,5.3L15.5,2.2C16,1.7 16.7,1.7 17.2,2.2L21.8,6.8C22.3,7.3 22.3,8 21.8,8.5L18.7,11.6C18.9,11 19,10.5 19,11Z" />
-                                </svg>
-                            </div>
-                            <button class="btn btn-primary custom-btn">Selengkapnya</button>
-                        </div>
-                        <h5 class="card-title">Berpikir Komputasi</h5>
-                        <p class="card-text">
-                            Berpikir komputasional adalah sebuah proses pemikiran yang digunakan untuk menyelesaikan masalah, baik dengan atau tanpa menggunakan komputer.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card custom-card">
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="brain-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,11.5 18.9,12 18.7,12.4L21.8,15.5C22.3,16 22.3,16.7 21.8,17.2L17.2,21.8C16.7,22.3 16,22.3 15.5,21.8L12.4,18.7C12,18.9 11.5,19 11,19H5A3,3 0 0,1 2,16V8A3,3 0 0,1 5,5H11C11.5,5 12,5.1 12.4,5.3L15.5,2.2C16,1.7 16.7,1.7 17.2,2.2L21.8,6.8C22.3,7.3 22.3,8 21.8,8.5L18.7,11.6C18.9,11 19,10.5 19,11Z" />
-                                </svg>
-                            </div>
-                            <button class="btn btn-primary custom-btn">Selengkapnya</button>
-                        </div>
-                        <h5 class="card-title">Berpikir Komputasi</h5>
-                        <p class="card-text">
-                            Berpikir komputasional adalah sebuah proses pemikiran yang digunakan untuk menyelesaikan masalah, baik dengan atau tanpa menggunakan komputer.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card custom-card">
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="brain-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,11.5 18.9,12 18.7,12.4L21.8,15.5C22.3,16 22.3,16.7 21.8,17.2L17.2,21.8C16.7,22.3 16,22.3 15.5,21.8L12.4,18.7C12,18.9 11.5,19 11,19H5A3,3 0 0,1 2,16V8A3,3 0 0,1 5,5H11C11.5,5 12,5.1 12.4,5.3L15.5,2.2C16,1.7 16.7,1.7 17.2,2.2L21.8,6.8C22.3,7.3 22.3,8 21.8,8.5L18.7,11.6C18.9,11 19,10.5 19,11Z" />
-                                </svg>
-                            </div>
-                            <button class="btn btn-primary custom-btn">Selengkapnya</button>
-                        </div>
-                        <h5 class="card-title">Berpikir Komputasi</h5>
-                        <p class="card-text">
-                            Berpikir komputasional adalah sebuah proses pemikiran yang digunakan untuk menyelesaikan masalah, baik dengan atau tanpa menggunakan komputer.
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- banner buku -->
+    <div class="container-fluid">
+        <div class="table-container">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 5%;">No</th>
+                            <th scope="col" style="width: 40%;">Nama</th>
+                            <th scope="col" style="width: 20%;">Kelas</th>
+                            <th scope="col" style="width: 17.5%;">Rata-Rata Skor</th>
+                            <th scope="col" style="width: 17.5%;">Total Skor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Adinda Ryka Mayandra</td>
+                            <td>X RPL B</td>
+                            <td>91.5</td>
+                            <td>549</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ainiya Naufalia Riskyani</td>
+                            <td>X RPL B</td>
+                            <td>91.2</td>
+                            <td>547</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Aji Surya Putra Utama</td>
+                            <td>X RPL B</td>
+                            <td>90.8</td>
+                            <td>545</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Alfa Dimas Sastranegara</td>
+                            <td>X RPL B</td>
+                            <td>90.5</td>
+                            <td>543</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Aqela Fakhrunnisa</td>
+                            <td>X RPL B</td>
+                            <td>90.2</td>
+                            <td>541</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Auni Hamizan</td>
+                            <td>X RPL B</td>
+                            <td>89.8</td>
+                            <td>539</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Ayu Nur Hamida</td>
+                            <td>X RPL B</td>
+                            <td>89.5</td>
+                            <td>537</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Bima Satriyo Wicaksono</td>
+                            <td>X RPL B</td>
+                            <td>89.2</td>
+                            <td>535</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Denniysa Adelita Nurlaka</td>
+                            <td>X RPL B</td>
+                            <td>88.5</td>
+                            <td>531</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Dzulqarnain Zaliananda Amansyah</td>
+                            <td>X RPL B</td>
+                            <td>88.2</td>
+                            <td>529</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
-    <div class="container-fluid py-4">
+     <!-- banner buku -->
+
+     <div class="container-fluid py-4">
         <div class="banner-container">
             <div class="decorative-circles">
                 <div class="circle circle-1"></div>
@@ -965,7 +827,7 @@
 
                         <!-- Teks Utama -->
                         <div class="col-lg-6 col-md-4 col-sm-12 text-center mb-4 mb-md-0">
-                            <div class="main-text">Sudah Membaca Materi?</div>
+                            <div class="main-text">Sudah Membaca Peringkat?</div>
                             <div class="sub-text">Jika Sudah, Ayo Kumpulkan</div>
                             <div class="sub-text mb-4">Tugas-Tugas Teknik Informatika</div>
                             <button class="btn btn-danger btn-custom">Kumpulkan Tugas</button>
@@ -974,7 +836,7 @@
                         <!-- Maskot -->
                         <div class="col-lg-3 col-md-4 col-sm-12">
                             <div class="mascot-container">
-                                <img class="home-hero-image-home-center" src="./assets/content/maskot-materi.png" width="70%" height="70%">
+                                <img class="home-hero-image-home-center" src="./assets/content/maskot-peringkat.png" width="70%" height="70%">
                             </div>
                         </div>
                     </div>

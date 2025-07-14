@@ -294,7 +294,7 @@
                         <a class="nav-link" href='materi.php'>MATERI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PERINGKAT</a>
+                        <a class="nav-link" href="peringkat.php">PERINGKAT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">KONTAK</a>

@@ -15,6 +15,7 @@
             --sinbar-dark-blue: #2171B5;
             --sinbar-black: #333333;
             --sinbar-gray: rgb(231, 231, 231);
+            --sinbar-card: rgb(219, 237, 255);
         }
 
         body {
@@ -25,7 +26,7 @@
         }
 
         .home-hero {
-            background: linear-gradient(135deg,rgb(231, 231, 231) 0%, #e9ecef 100%);
+            background: linear-gradient(135deg,rgb(255, 255, 255) 100%);
             padding: 80px 0;
             min-height: 500px;
             display: flex;
@@ -323,7 +324,6 @@
             background: white;
             border-radius: 15px;
             padding: 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .dashboard-title {
@@ -336,7 +336,7 @@
         }
 
         .subject-card {
-            background: #e9ecef;
+            background:rgb(219, 237, 255);
             border-radius: 15px;
             padding: 20px;
             margin-bottom: 20px;
@@ -584,17 +584,11 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="btn-container">
-                    <button class="btn btn-primary view-all-btn" onclick="showAllMaterials()">
-                        SEMUA MATERI
-                    </button>
-                </div>
             </div>
         </div>
     </div>
 
-    <div class="footer">\<?php include './components/footer.php' ?></div>
+    <div class="footer"><?php include './components/footer.php' ?></div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
