@@ -7,14 +7,13 @@
     <title>SinBarTIK - Website untuk Mempelajari Informatika</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
         :root {
             --sinbar-blue: #4A90E2;
             --sinbar-light-blue: #E3F2FD;
             --sinbar-dark-blue: #2171B5;
             --sinbar-black: #333333;
-            --sinbar-gray: rgb(231, 231, 231);
+            --sinbar-gray: #666666;
         }
 
         body {
@@ -25,7 +24,7 @@
         }
 
         .home-hero {
-            background: linear-gradient(135deg,rgb(231, 231, 231) 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             padding: 80px 0;
             min-height: 500px;
             display: flex;
@@ -34,11 +33,10 @@
 
         .hero-title {
             font-size: 3.5rem;
-            font-weight: 500;
+            font-weight: 700;
             color: var(--sinbar-blue);
             margin-bottom: 20px;
             line-height: 1.2;
-            padding-left: 20px;
         }
 
         .hero-subtitle {
@@ -64,13 +62,137 @@
             box-shadow: 0 20px 40px rgba(74, 144, 226, 0.3);
         }
 
+        .mascot-face {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .mascot-eye {
+            width: 15px;
+            height: 15px;
+            background: #333;
+            border-radius: 50%;
+            position: absolute;
+            top: 25px;
+        }
+
+        .mascot-eye.left {
+            left: 20px;
+        }
+
+        .mascot-eye.right {
+            right: 20px;
+        }
+
+        .mascot-mouth {
+            width: 30px;
+            height: 15px;
+            border: 3px solid #333;
+            border-top: none;
+            border-radius: 0 0 30px 30px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .mascot-book {
+            width: 60px;
+            height: 80px;
+            background: #FFA726;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .mascot-book::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            height: 3px;
+            background: #FF7043;
+            border-radius: 2px;
+        }
+
+        .mascot-book::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            right: 10px;
+            height: 2px;
+            background: #FF7043;
+            border-radius: 1px;
+        }
+
+        .floating-icons {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        .floating-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 24px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-icon:nth-child(1) {
+            background: #FF5722;
+            animation-delay: 0s;
+        }
+
+        .floating-icon:nth-child(2) {
+            background: #4CAF50;
+            animation-delay: 1s;
+        }
+
+        .floating-icon:nth-child(3) {
+            background: #9C27B0;
+            animation-delay: 2s;
+        }
+
+        .floating-icon:nth-child(4) {
+            background: #FF9800;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
         .peringkat-section {
             padding: 80px 0;
             background: white;
         }
 
         .peringkat-title {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 700;
             color: var(--sinbar-black);
             text-align: center;
@@ -318,14 +440,14 @@
             margin: 50px auto;
             padding: 20px;
         }
-
+        
         .main-card {
             background: white;
             border-radius: 15px;
             padding: 30px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
+        
         .dashboard-title {
             text-align: center;
             font-size: 2rem;
@@ -334,7 +456,7 @@
             margin-bottom: 40px;
             letter-spacing: 1px;
         }
-
+        
         .subject-card {
             background: #e9ecef;
             border-radius: 15px;
@@ -348,33 +470,33 @@
             flex-direction: column;
             justify-content: space-between;
         }
-
+        
         .subject-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
             border-color: #007bff;
         }
-
+        
         .subject-icon {
             font-size: 3rem;
             color: #007bff;
             margin-bottom: 15px;
         }
-
+        
         .subject-title {
             font-size: 1.1rem;
-            font-weight: 450;
+            font-weight: 600;
             color: #007bff;
             margin-bottom: 10px;
             line-height: 1.4;
         }
-
+        
         .subject-subtitle {
             color: #6c757d;
             font-size: 0.9rem;
             margin-top: auto;
         }
-
+        
         .view-all-btn {
             background: #007bff;
             color: white;
@@ -385,85 +507,71 @@
             margin-top: 30px;
             transition: all 0.3s ease;
         }
-
+        
         .view-all-btn:hover {
             background: #0056b3;
             transform: translateY(-2px);
         }
-
+        
         .btn-container {
             text-align: center;
         }
-
+        
         /* Custom icons using CSS shapes */
         .brain-icon::before {
             content: "🧠";
             font-size: 3rem;
         }
-
+        
         .signal-icon::before {
             content: "📡";
             font-size: 3rem;
         }
-
+        
         .computer-icon::before {
             content: "💻";
             font-size: 3rem;
         }
-
+        
         .network-icon::before {
             content: "🌐";
             font-size: 3rem;
         }
-
+        
         .code-icon::before {
             content: "💻";
             font-size: 3rem;
         }
-
+        
         .data-icon::before {
             content: "📊";
             font-size: 3rem;
         }
-
+        
         @media (max-width: 768px) {
             .dashboard-title {
                 font-size: 1.5rem;
             }
-
+            
             .subject-card {
                 height: 160px;
                 padding: 15px;
             }
-
+            
             .subject-icon {
                 font-size: 2.5rem;
             }
-
+            
             .subject-title {
                 font-size: 1rem;
             }
         }
-
-        .footer {
-            margin-top: 10px;
-        }
-
-        /* .sas{
-            width: 30%;
-        }
-
-        .home-hero-image-home{
-            width: 70%;
-            margin-left: 55px;
-
-        } */
     </style>
 </head>
 
 <body>
 
-    <?php include './components/navbar.php'; ?>
+    <?php include 'pp.html'; ?>
     <!-- Hero Section -->
     <div class="home-hero">
         <div class="container">
@@ -472,11 +580,11 @@
                     <h1 class="hero-title">Selamat Datang di Website SinBarTIK</h1>
                     <p class="hero-subtitle">Website untuk Mempelajari Informatika</p>
                 </div>
-                <div class="col-lg-6 col-md-6 sas">
-                    <div class="d-flex justify-content-center">
-                        <div style="width: fit-content;">
-                            <img class="home-hero-image-home-center" src="./assets/content/maskot-materi.png">
-                        </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="position-relative">
+                    <img class="home-hero-image-home" src="./assets/content/hero-home.png">
+
+                        
                     </div>
                 </div>
             </div>
@@ -509,7 +617,7 @@
     <div class="dashboard-container">
         <div class="main-card">
             <h1 class="dashboard-title">MATERI SINBAR</h1>
-
+            
             <div class="container-fluid">
                 <div class="row">
                     <!-- Berpikir Komputasi -->
@@ -523,7 +631,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <!-- Teknologi Informasi dan Komunikasi -->
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="subject-card">
@@ -535,7 +643,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <!-- Sistem Komputer -->
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="subject-card">
@@ -547,7 +655,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <!-- Jaringan Komputer dan Internet -->
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="subject-card">
@@ -559,7 +667,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <!-- Algoritma Pemrograman dan Praktik Lintas Bidang -->
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="subject-card">
@@ -571,7 +679,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <!-- Analisis Data dan Dampak Sosial Informatika -->
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="subject-card">
@@ -584,7 +692,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="btn-container">
                     <button class="btn btn-primary view-all-btn" onclick="showAllMaterials()">
                         SEMUA MATERI
@@ -594,19 +702,20 @@
         </div>
     </div>
 
-    <div class="footer">\<?php include './components/footer.php' ?></div>
-
+    <?php include './components/footer.php' ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
     <script>
+        
+        
         // Animasi masuk untuk kartu-kartu
         window.addEventListener('load', function() {
             const cards = document.querySelectorAll('.subject-card');
             cards.forEach((card, index) => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(20px)';
-
+                
                 setTimeout(() => {
                     card.style.transition = 'all 0.5s ease';
                     card.style.opacity = '1';

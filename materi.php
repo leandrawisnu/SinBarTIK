@@ -7,14 +7,13 @@
     <title>SinBarTIK - Website untuk Mempelajari Informatika</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
         :root {
             --sinbar-blue: #4A90E2;
             --sinbar-light-blue: #E3F2FD;
             --sinbar-dark-blue: #2171B5;
             --sinbar-black: #333333;
-            --sinbar-gray: rgb(231, 231, 231);
+            --sinbar-gray: #666666;
         }
 
         body {
@@ -25,7 +24,7 @@
         }
 
         .home-hero {
-            background: linear-gradient(135deg,rgb(231, 231, 231) 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             padding: 80px 0;
             min-height: 500px;
             display: flex;
@@ -70,7 +69,7 @@
         }
 
         .peringkat-title {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 700;
             color: var(--sinbar-black);
             text-align: center;
@@ -363,7 +362,7 @@
 
         .subject-title {
             font-size: 1.1rem;
-            font-weight: 450;
+            font-weight: 600;
             color: #007bff;
             margin-bottom: 10px;
             line-height: 1.4;
@@ -444,20 +443,6 @@
                 font-size: 1rem;
             }
         }
-
-        .footer {
-            margin-top: 10px;
-        }
-
-        /* .sas{
-            width: 30%;
-        }
-
-        .home-hero-image-home{
-            width: 70%;
-            margin-left: 55px;
-
-        } */
     </style>
 </head>
 
@@ -469,10 +454,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
-                    <h1 class="hero-title">Selamat Datang di Website SinBarTIK</h1>
-                    <p class="hero-subtitle">Website untuk Mempelajari Informatika</p>
+                    <h1 class="hero-title">Materi Materi Teknik Informatika</h1>
+                    <p class="hero-subtitle">Mari Menjadi Anak yang Selalu Berpikir Kritis</p>
                 </div>
-                <div class="col-lg-6 col-md-6 sas">
+                <div class="col-lg-6 col-md-6">
                     <div class="d-flex justify-content-center">
                         <div style="width: fit-content;">
                             <img class="home-hero-image-home-center" src="./assets/content/maskot-materi.png">
@@ -483,119 +468,7 @@
         </div>
     </div>
 
-    <!-- Peringkat Section -->
-    <div class="peringkat-section">
-        <div class="container">
-            <h2 class="peringkat-title">PERINGKAT SINBAR</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="peringkat-container">
-                        <div class="podium-container">
-                            <div class="podium-step second">Muhammad Rafli Al-Farisi</div>
-                            <div class="podium-step first">Izan</div>
-                            <div class="podium-step third">Cipunkkkk Apalah</div>
-                        </div>
-                        <div class="peringkat-info">
-                            <p class="peringkat-subtitle">PERINGKAT SINBAR UNTUK BULAN INI</p>
-                            <a href="#" class="peringkat-button">LIHAT PERINGKAT</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Dashboard Section -->
-    <div class="dashboard-container">
-        <div class="main-card">
-            <h1 class="dashboard-title">MATERI SINBAR</h1>
-
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- Berpikir Komputasi -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="subject-card">
-                            <div class="text-center">
-                                <div class="subject-icon">
-                                    <i class="fas fa-brain"></i>
-                                </div>
-                                <h3 class="subject-title">Berpikir Komputasi</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Teknologi Informasi dan Komunikasi -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="subject-card">
-                            <div class="text-center">
-                                <div class="subject-icon">
-                                    <i class="fas fa-signal"></i>
-                                </div>
-                                <h3 class="subject-title">Teknologi Informasi dan Komunikasi</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sistem Komputer -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="subject-card">
-                            <div class="text-center">
-                                <div class="subject-icon">
-                                    <i class="fas fa-desktop"></i>
-                                </div>
-                                <h3 class="subject-title">Sistem Komputer</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Jaringan Komputer dan Internet -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="subject-card">
-                            <div class="text-center">
-                                <div class="subject-icon">
-                                    <i class="fas fa-network-wired"></i>
-                                </div>
-                                <h3 class="subject-title">Jaringan Komputer dan Internet</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Algoritma Pemrograman dan Praktik Lintas Bidang -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="subject-card">
-                            <div class="text-center">
-                                <div class="subject-icon">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <h3 class="subject-title">Algoritma Pemrograman dan Praktik Lintas Bidang</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Analisis Data dan Dampak Sosial Informatika -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="subject-card">
-                            <div class="text-center">
-                                <div class="subject-icon">
-                                    <i class="fas fa-chart-bar"></i>
-                                </div>
-                                <h3 class="subject-title">Analisis Data dan Dampak Sosial Informatika</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="btn-container">
-                    <button class="btn btn-primary view-all-btn" onclick="showAllMaterials()">
-                        SEMUA MATERI
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">\<?php include './components/footer.php' ?></div>
-
+    <?php include './components/footer.php' ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
